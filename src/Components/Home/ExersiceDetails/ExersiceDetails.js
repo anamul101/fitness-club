@@ -37,7 +37,7 @@ const ExersiceDetails = ({timeCount}) => {
     return (
         <div className='sticky top-0'>
             <div className='flex items-center my-5'>
-                <img className='rounded-full w-20 h-20' src={('https://anamul.me/wp-content/uploads/2021/12/Untitled-design-4.jpg')} alt="Mohammad Anamul" />
+                <img className='rounded-full w-20 h-20' src={('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzVjUTf3-1di948k-lMHR0gcm4RiWJoARyw&usqp=CAU')} alt="Mohammad Anamul" />
                 <div className='ml-3'>
                     <h1 className='text-2xl font-semibold'>MD: ANAMUL</h1>
                    

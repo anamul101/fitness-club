@@ -3,7 +3,7 @@ import React from 'react';
 const NavBar = () => {
     return (
         <div>
-            <div className="navbar bg-gray-900 text-white sticky top-0">
+            <div className="navbar bg-gray-900 text-white">
                 <div className="flex-1">
                     <a href='/' className="btn btn-ghost normal-case text-4xl font-semibold">Fn Yoga <span className='text-rose-600 mr-2'>Club</span></a>
                 </div>
