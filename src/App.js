@@ -3,6 +3,7 @@ import './App.css';
 import React,{useEffect, useState } from 'react';
 import CardExersice from './Components/Home/CardExersice/CardExersice';
 import ExersiceDetails from './Components/Home/ExersiceDetails/ExersiceDetails';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
                 <div className='bg-yellow-300 w-1/4 p-8'>
                     <ExersiceDetails timeCount={timeCount}></ExersiceDetails>
                 </div>
-            </div>
+        </div>
+        <Footer></Footer>
     </div>
   );
 }
