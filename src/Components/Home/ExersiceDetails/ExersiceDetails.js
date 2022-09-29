@@ -47,14 +47,14 @@ const ExersiceDetails = ({timeCount}) => {
             <div className='flex flex-row justify-between bg-gray-300'>
                 <div className='m-2 bg-white p-2 rounded-md text-center'>
                     <div className='flex'>
-                        <h1 className="text-3xl font-semibold">75 </h1>
+                        <h1 className="text-3xl font-semibold">58</h1>
                         <span className=''>kg</span>
                     </div>
                     <p className='font-medium text-1xl'>Weight</p>
                 </div>
                 <div className='m-2 bg-white p-2 rounded-md text-center'>
                     <div className='flex'>
-                        <h1 className="text-3xl font-semibold">6.5</h1>
+                        <h1 className="text-3xl font-semibold">5.6</h1>
                     </div>
                     <p className='font-medium text-1xl'>Height</p>
                 </div>
