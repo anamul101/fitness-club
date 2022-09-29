@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import React,{useEffect, useState } from 'react';
 import CardExersice from './Components/Home/CardExersice/CardExersice';
