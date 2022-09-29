@@ -1,11 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './Components/Home/Home';
+import React,{useEffect, useState } from 'react';
+import CardExersice from './Components/Home/CardExersice/CardExersice';
+import ExersiceDetails from './Components/Home/ExersiceDetails/ExersiceDetails';
 
 function App() {
+  const [card, setCard] = useState([]);
+  const [timeCount, setTimeCount]=useState([])
+  useEffect(()=>{
+      fetch('fackdata.json')
+      .then(res=>res.json())
+      .then(data=>setCard(data))
+  },[])
+
+  const HandelBtn = (singleCart)=>{
+    const newTime= [...timeCount, singleCart];
+    setTimeCount(newTime);
+   
+}
   return (
-    <div className="App">
-        <Home></Home>
+    <div>
+        {/* <Home></Home> */}
+        <div className="flex lg:flex-row md:flex-col sm:flex-col">
+                <div className=''>
+                    <CardExersice card={card} HandelBtn={HandelBtn}></CardExersice>
+                </div>
+                <div className='bg-yellow-300 w-100% p-8'>
+                    <ExersiceDetails timeCount={timeCount}></ExersiceDetails>
+                </div>
+            </div>
     </div>
   );
 }
