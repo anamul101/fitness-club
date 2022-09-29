@@ -11,9 +11,9 @@ const CardExersice = ({HandelBtn,card}) => {
    
     return (
         <div className='mt-8'>
-             <h1 className='text-4xl text-center'>Select your favourit exercise</h1>
+             <h1 className='text-4xl font-medium text-center'>Select today’s exercise</h1>
            
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-8'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mx-8'>
                 {
                      card.map(singleCart=> <SingleCard key={singleCart.id} singleCart={singleCart} HandelBtn={HandelBtn}></SingleCard>)
                 }

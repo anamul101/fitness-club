@@ -4,6 +4,7 @@ import React,{useEffect, useState } from 'react';
 import CardExersice from './Components/Home/CardExersice/CardExersice';
 import ExersiceDetails from './Components/Home/ExersiceDetails/ExersiceDetails';
 
+
 function App() {
   const [card, setCard] = useState([]);
   const [timeCount, setTimeCount]=useState([])
@@ -21,11 +22,11 @@ function App() {
   return (
     <div>
         {/* <Home></Home> */}
-        <div className="flex lg:flex-row md:flex-col sm:flex-col">
-                <div className=''>
+        <div className="flex justify-between lg:flex-row md:flex-col sm:flex-col">
+                <div className='w-4/5 m-8'>
                     <CardExersice card={card} HandelBtn={HandelBtn}></CardExersice>
                 </div>
-                <div className='bg-yellow-300 w-100% p-8'>
+                <div className='bg-yellow-300 w-1/4 p-8'>
                     <ExersiceDetails timeCount={timeCount}></ExersiceDetails>
                 </div>
             </div>
