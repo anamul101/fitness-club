@@ -4,6 +4,7 @@ import React,{useEffect, useState } from 'react';
 import CardExersice from './Components/Home/CardExersice/CardExersice';
 import ExersiceDetails from './Components/Home/ExersiceDetails/ExersiceDetails';
 import Footer from './Components/Footer/Footer';
+import NavBar from './Components/Navbar/NavBar';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 }
   return (
     <div>
-        {/* <Home></Home> */}
+        <NavBar></NavBar>
         <div className="flex justify-between lg:flex-row md:flex-col sm:flex-col">
                 <div className='w-4/5 m-8'>
                     <CardExersice card={card} HandelBtn={HandelBtn}></CardExersice>
