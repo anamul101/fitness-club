@@ -10,12 +10,12 @@ const CardExersice = ({HandelBtn,card}) => {
     // },[])
    
     return (
-        <div>
-             <h1 className='text-4xl'>this is a card</h1>
+        <div className='mt-8'>
+             <h1 className='text-4xl text-center'>Select your favourit exercise</h1>
            
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-8'>
                 {
-                     card.map(singleCart=> <SingleCard singleCart={singleCart} HandelBtn={HandelBtn}></SingleCard>)
+                     card.map(singleCart=> <SingleCard key={singleCart.id} singleCart={singleCart} HandelBtn={HandelBtn}></SingleCard>)
                 }
             </div>
         </div>
