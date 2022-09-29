@@ -1,4 +1,6 @@
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import React, { useState } from 'react';
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
@@ -37,11 +39,12 @@ const ExersiceDetails = ({timeCount}) => {
 
     return (
         <div className='sticky top-0'>
-            <div className='flex items-center border my-5'>
+            <div className='flex items-center my-5'>
                 <img className='rounded-full w-20 h-20'  src={('https://anamul.me/wp-content/uploads/2021/12/Untitled-design-4.jpg')} alt="Mohammad Anamul" />
                 <div className='ml-3'>
                     <h1 className='text-2xl font-semibold'>MD: ANAMUL</h1>
-                    <p>Dhaka, Faridpur</p>
+                   
+                    <p> <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> Dhaka, Bangladesh</p>
                 </div>
             </div>
             <div className='flex flex-row justify-between bg-gray-300'>
